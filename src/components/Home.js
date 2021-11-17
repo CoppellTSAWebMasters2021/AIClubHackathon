@@ -2,7 +2,7 @@ import React from "react";
 //import Wave from "react-wavify";
 import './css/Home.css'
 import Typewriter from 'typewriter-effect';
-import Card from './Card'
+// import Card from './Card'
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 // import { Carousel } from 'react-responsive-carousel';
 
