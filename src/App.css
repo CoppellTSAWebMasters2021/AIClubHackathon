@@ -1,8 +1,10 @@
-.App{
-  width: 100%;
-	float: left;
+body {
+  font-family: "Montserrat", sans-serif;
+
+  background-color: #ffffff;
 }
-body{
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f6efde;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
