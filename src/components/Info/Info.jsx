@@ -65,6 +65,7 @@ const Info = ({
               </ImgWrap>
             </Column2>
           </InfoRow>
+          
         </InfoWrapper>
       </InfoContainer>
     </>

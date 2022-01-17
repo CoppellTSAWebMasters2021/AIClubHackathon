@@ -21,37 +21,8 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItem>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/">Sponsors</FooterLink>
-              <FooterLink to="/">Terms Of Service</FooterLink>
-              <FooterLink to="/">Privacy Policy</FooterLink>
-            </FooterLinkItem>
-            <FooterLinkItem>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/">Sponsors</FooterLink>
-              <FooterLink to="/">Terms Of Service</FooterLink>
-              <FooterLink to="/">Privacy Policy</FooterLink>
-            </FooterLinkItem>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItem>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/">Sponsors</FooterLink>
-              <FooterLink to="/">Terms Of Service</FooterLink>
-              <FooterLink to="/">Privacy Policy</FooterLink>
-            </FooterLinkItem>
-            <FooterLinkItem>
-              <FooterLinkTitle>About Us</FooterLinkTitle>
-              <FooterLink to="/">Sponsors</FooterLink>
-              <FooterLink to="/">Terms Of Service</FooterLink>
-              <FooterLink to="/">Privacy Policy</FooterLink>
-            </FooterLinkItem>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
         <SocialMedia>
+          
           <SocialMediaWrap>
             <SocialLogo to="/">Coppell AI</SocialLogo>
             <WebsiteRights>
@@ -68,7 +39,9 @@ const Footer = () => {
                 <FaDiscord />
               </SocialIconLink>
             </SocialIcons>
+            
           </SocialMediaWrap>
+          
         </SocialMedia>
       </FooterWrap>
     </FooterContainer>

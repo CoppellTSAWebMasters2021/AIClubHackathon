@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import {animateScroll as scroll} from 'react-scroll'
+import { Button } from "../ButtonElement";
 import {
   Nav,
   NavbarContainer,
@@ -108,7 +109,21 @@ const Navbar = ({ toggle }) => {
               </NavItem>
             </NavMenu>
             <NavBtn>
-              <NavBtnLink to="/joinnow">Join Now</NavBtnLink>
+              <Button
+                to="contactus"
+                // onMouseEnter={onHover}
+                // onMouseLeave={onHover}
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={-80}
+                primary="true"
+                dark="true"
+              >
+                {" "}
+                Register
+              </Button>
             </NavBtn>
           </NavbarContainer>
         </Nav>
