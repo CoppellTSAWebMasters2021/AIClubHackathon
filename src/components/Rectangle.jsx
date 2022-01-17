@@ -12,13 +12,14 @@ export const Rectangle = styled.div`
     width: 569px;
     height: 370px;
   }
-  @media screen and (max-width: 500px) {
-    width: 179px;
-    height: 370px;
-  }
 
   @media screen and (max-width: 1000px) {
     width: 379px;
+    height: 370px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 320px;
     height: 370px;
   }
 `;
