@@ -49,7 +49,8 @@ export const HeroBgImage = styled.img`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
+  max-width: 1080px;
+  height: 200px
   position: absolute;
   padding: 8px 24px;
   display: flex;
@@ -73,10 +74,11 @@ export const HeroH1 = styled.h1`
 `;
 
 export const HeroBtnWrapper = styled.div`
-  margin-top: 32px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
+  padding: 10px;
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
@@ -87,4 +89,24 @@ export const ArrowForward = styled(MdArrowForward)`
 export const ArrowRight = styled(MdKeyboardArrowDown)`
   margin-left: 8px;
   font-size: 20px;
+`;
+
+export const HeroArrowDown = styled.img`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+`;
+
+export const ArrowText = styled.p`
+  color: #ff437b;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  position: absolute;
+  bottom: 5px;
 `;
