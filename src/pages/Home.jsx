@@ -5,7 +5,6 @@ import Footer from "../components/Footer/Footer";
 import Hero from "../components/Hero/Hero";
 // import Card from "../components/Info/Card/Card";
 
-import Info from "../components/Info/Info";
 import Navbar from "../components/Navbar/Navbar";
 import Rules from "../components/Rules/Rules";
 import Schedule from "../components/Schedule/Schedule";

@@ -4,11 +4,6 @@ import { FaDiscord, FaGithub, FaInstagram } from "react-icons/fa";
 import {
   FooterContainer,
   FooterWrap,
-  FooterLinksContainer,
-  FooterLinksWrapper,
-  FooterLinkItem,
-  FooterLinkTitle,
-  FooterLink,
   SocialMedia,
   SocialMediaWrap,
   SocialLogo,
@@ -22,7 +17,6 @@ const Footer = () => {
     <FooterContainer>
       <FooterWrap>
         <SocialMedia>
-          
           <SocialMediaWrap>
             <SocialLogo to="/">Coppell AI</SocialLogo>
             <WebsiteRights>
@@ -39,9 +33,7 @@ const Footer = () => {
                 <FaDiscord />
               </SocialIconLink>
             </SocialIcons>
-            
           </SocialMediaWrap>
-          
         </SocialMedia>
       </FooterWrap>
     </FooterContainer>

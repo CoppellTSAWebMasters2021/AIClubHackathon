@@ -5,8 +5,6 @@ import {
   AboutusRow,
   Column1,
   Column2,
-  Rectangle4,
-  Rectangle5,
   Heading,
 } from "./AboutusElements";
 import { Flex, Box } from "@chakra-ui/react";

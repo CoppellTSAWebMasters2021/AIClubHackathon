@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 
 import {
   ContactContainer,
@@ -23,7 +22,7 @@ const Contact = () => {
   const [submitting, setSubmitting] = useState(false);
   const [emptyFields, setEmptyFields] = useState(false);
 
-  const formSparkUrl = "https://submit-form.com/hGlsjDhY";
+  // const formSparkUrl = "https://submit-form.com/hGlsjDhY";
   const toast = useToast();
 
   const submitForm = async (event: FormEvent) => {
@@ -43,33 +42,33 @@ const Contact = () => {
       });
     }
   };
-  const postSubmission = async () => {
-    const payload = {
-      email: email,
-      name: name,
-      message: message,
-    };
+  // const postSubmission = async () => {
+  //   const payload = {
+  //     email: email,
+  //     name: name,
+  //     message: message,
+  //   };
 
-    try {
-      await axios.post(formSparkUrl, payload);
-      toast({
-        title: "Your message has been sent!",
-        description: "I will get back to you as soon as possible.",
-        status: "success",
-        duration: 5000,
-        isClosable: true,
-      });
-    } catch (error) {
-      console.log(error);
-      toast({
-        title: "There was an error sending your message.",
-        description: "Please try again later.",
-        status: "error",
-        duration: 5000,
-        isClosable: true,
-      });
-    }
-  };
+  //   try {
+  //     await axios.post(formSparkUrl, payload);
+  //     toast({
+  //       title: "Your message has been sent!",
+  //       description: "I will get back to you as soon as possible.",
+  //       status: "success",
+  //       duration: 5000,
+  //       isClosable: true,
+  //     });
+  //   } catch (error) {
+  //     console.log(error);
+  //     toast({
+  //       title: "There was an error sending your message.",
+  //       description: "Please try again later.",
+  //       status: "error",
+  //       duration: 5000,
+  //       isClosable: true,
+  //     });
+  //   }
+  // };
   return (
     <ContactContainer id="contactus">
       <ContactFormWrapper>

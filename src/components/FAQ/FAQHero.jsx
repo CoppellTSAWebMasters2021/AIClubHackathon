@@ -1,11 +1,9 @@
 import React from "react";
 
-import { Bg, BgImage } from "../../components/GeneralPurpose/GPElements";
 
 import {
   FAQContainer,
   FAQContent,
-  FAQH1,
   FAQAccordions,
   Heading,
 } from "./FAQElements";
