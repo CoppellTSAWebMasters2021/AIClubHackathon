@@ -71,9 +71,32 @@ export const TopLine = styled.p`
 
 export const Heading = styled.h1`
     
+    font-size: 75px;
+    line-height: 1.1;
+    font-weight: 600;
+
+    padding: 10px;
+    color ${({ lightText }) => (lightText ? "#ff437b" : "#010606")};
+
+    @media screen and (max-width: 768px) {
+        font-size: 45px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 35px;
+    }
+
+`;
+
+export const Heading2 = styled.h1`
+    
     font-size: 100px;
     line-height: 1.1;
     font-weight: 600;
+      max-width: 440px;
+
+    padding: 10px;
+    width: fit-content;
     color ${({ lightText }) => (lightText ? "#ff437b" : "#010606")};
 
     @media screen and (max-width: 1000px) {
@@ -93,6 +116,3 @@ export const Subtitle = styled.p`
   line-height: 24px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
-
-
-

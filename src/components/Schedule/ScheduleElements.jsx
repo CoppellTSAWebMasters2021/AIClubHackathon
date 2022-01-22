@@ -83,9 +83,16 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
-  margin-bottom: 35px;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 22px;
+  max-width: 540px;
+  padding: 0 15px;
+  shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
+
+  @media screen and (max-width: 1000px) {
+    font-size: 22px;
+
+    width: fit-content;
+  }
 `;

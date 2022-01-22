@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../ButtonElement.jsx";
-import Image from "../../images/hero-bg.jpg";
+import HeroImage from "../../images/hero-bg.jpg";
 import Down from "../../images/arrow.svg";
 
 import {
@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <HeroContainer id="home">
       <HeroBg>
-        <HeroBgImage src={Image} type="image/jpg" />
+        <HeroBgImage src={HeroImage} type="image/jpg" />
       </HeroBg>
       <HeroContent>
         <HeroH1> Virtual Artifical Intelligence Hackathon 2022</HeroH1>
@@ -50,6 +50,7 @@ const Hero = () => {
             </Button>
           </HeroBtnWrapper>
         </HStack>
+
         <HeroArrowDown src={Down} />
         <ArrowText>Scroll Down</ArrowText>
       </HeroContent>

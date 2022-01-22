@@ -70,7 +70,7 @@ const Contact = () => {
   //   }
   // };
   return (
-    <ContactContainer id="contactus">
+    <ContactContainer id="contactus" lightBg={true}>
       <ContactFormWrapper>
         <ContactH1>Contact Us</ContactH1>
 

@@ -24,7 +24,7 @@ export const ContactFormWrapper = styled.div`
   color: #f7efdf;
   background-color: #ff437b;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px #000;
+  box-shadow: 0px 0px 10px #ff437b;
   gap: 20px;
 
   @media (max-width: 600px) {

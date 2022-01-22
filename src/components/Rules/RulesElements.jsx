@@ -33,3 +33,22 @@ export const Heading = styled.h1`
     }
 
 `;
+
+export const Subtitle = styled.p`
+  font-size: 48px;
+  max-width: 540px;
+  padding: 0 15px;
+  shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+
+  color: ${({ darkText }) => (darkText ? "#ff437b" : "#fff")};
+
+  @media screen and (max-width: 1000px) {
+    font-size: 36px;
+
+    width: fit-content;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 32px;
+  }
+`;

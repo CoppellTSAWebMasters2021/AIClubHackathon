@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   height: 80px;
   margin-top: -80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 1rem;
   position: sticky;
@@ -77,11 +77,13 @@ export const NavLinks = styled(LinkS)`
     align-items: center;
     text-decoration: none;
     padding: 0 1rem;
-    height 100%;
+    height: 100%;
     cursor: pointer;
 
     &.active{
+
         border-bottom: 3px solid #ff437b;
+
     }
 
 `;
@@ -112,6 +114,6 @@ export const NavBtnLink = styled(LinkR)`
   &:hover {
     transition: all 0.2s ease-in-out;
     background-color: #fff;
-    color: #ff437b;
+    color: #a98590;
   }
 `;

@@ -10,7 +10,6 @@ import Rules from "../components/Rules/Rules";
 import Schedule from "../components/Schedule/Schedule";
 // import Services from "../components/Services/Services";
 import Sidebar from "../components/Sidebar/Sidebar";
-import Sponsor from "../components/Sponsor/Sponsor";
 import When from "../components/When/When";
 import Contact from "../components/Contact/Contact";
 
@@ -31,7 +30,6 @@ const Home = () => {
       <Schedule />
       <Rules />
       <FAQHero />
-      <Sponsor />
       <Contact />
       <Footer />
     </>

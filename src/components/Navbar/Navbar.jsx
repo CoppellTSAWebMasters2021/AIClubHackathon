@@ -106,24 +106,24 @@ const Navbar = ({ toggle }) => {
                   Contact Us
                 </NavLinks>
               </NavItem>
+              <NavBtn>
+                <Button
+                  to="contactus"
+                  // onMouseEnter={onHover}
+                  // onMouseLeave={onHover}
+                  smooth={true}
+                  duration={500}
+                  spy={true}
+                  exact="true"
+                  offset={-80}
+                  primary="true"
+                  dark="true"
+                >
+                  {" "}
+                  Register
+                </Button>
+              </NavBtn>
             </NavMenu>
-            <NavBtn>
-              <Button
-                to="contactus"
-                // onMouseEnter={onHover}
-                // onMouseLeave={onHover}
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
-                offset={-80}
-                primary="true"
-                dark="true"
-              >
-                {" "}
-                Register
-              </Button>
-            </NavBtn>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

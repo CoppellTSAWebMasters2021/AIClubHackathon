@@ -97,6 +97,11 @@ export const HeroArrowDown = styled.img`
   align-items: center;
   position: absolute;
   bottom: 50px;
+
+  @media screen and (max-width: 768px) {
+    bottom: 40px;
+  }
+
 `;
 
 export const ArrowText = styled.p`
@@ -109,4 +114,8 @@ export const ArrowText = styled.p`
   margin-bottom: 16px;
   position: absolute;
   bottom: 5px;
+
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `;

@@ -23,13 +23,13 @@ const Footer = () => {
               Coppell AI © {new Date().getFullYear()} All Rights Reserved
             </WebsiteRights>
             <SocialIcons>
-              <SocialIconLink href="/" target="_blank" aria-label="Github">
+              <SocialIconLink target="_blank" aria-label="Github">
                 <FaGithub />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Instagram">
+              <SocialIconLink  target="_blank" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
-              <SocialIconLink href="/" target="_blank" aria-label="Discord">
+              <SocialIconLink target="_blank" aria-label="Discord">
                 <FaDiscord />
               </SocialIconLink>
             </SocialIcons>

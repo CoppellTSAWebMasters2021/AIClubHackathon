@@ -6,6 +6,7 @@ import {
   Column1,
   Column2,
   Heading,
+  Subtitle,
 } from "./AboutusElements";
 import { Flex, Box } from "@chakra-ui/react";
 import { Rectangle } from "../Rectangle";
@@ -26,9 +27,20 @@ const Aboutus = () => {
                   <Rectangle lightBg={true} lightShadow={true} big={true} />
                 </Box>
 
-                <Box w="full" mt={-340} mr={-50}>
-                  <Rectangle lightBg={false} big={true} />
-                </Box>
+                <Flex
+                  direction="column"
+                  justifyContent="center"
+                  alignItems="center"
+                >
+                  <Box w="full" mt={-340} mr={-50}>
+                    <Rectangle lightBg={false} big={true}>
+                      <Subtitle>
+                        We are a club at Coppell High School whose goal is to
+                        educate students about AI.
+                      </Subtitle>
+                    </Rectangle>
+                  </Box>
+                </Flex>
               </Flex>
             </Column1>
             <Column2>

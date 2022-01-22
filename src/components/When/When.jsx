@@ -3,6 +3,7 @@ import {
   Column1,
   Column2,
   Heading,
+  Heading2,
   WhenContainer,
   WhenRow,
   WhenWrapper,
@@ -19,7 +20,7 @@ const When = () => {
           <WhenRow imgStart={false} imgStartM={true}>
             <Column1>
               <Flex justifyContent="center" alignItems="center">
-                <Heading lightText={true}>WHEN?</Heading>
+                <Heading2 lightText={true}>WHEN?</Heading2>
               </Flex>
             </Column1>
             <Column2>
@@ -33,7 +34,9 @@ const When = () => {
                 </Box>
 
                 <Box w="full" mt={-400} ml={-50}>
-                  <Rectangle lightBg={true} lightShadow={true} />
+                  <Rectangle lightBg={true} lightShadow={true}>
+                    <Heading lightText={true}>May 6, 2022</Heading>
+                  </Rectangle>
                 </Box>
               </Flex>
             </Column2>
