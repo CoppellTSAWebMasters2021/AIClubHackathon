@@ -9,7 +9,7 @@ export const ContactContainer = styled.div`
   justify-content: center;
 
   @media (max-width: 768px) {
-    height: 700px;
+    height: 900px;
   }
 `;
 
