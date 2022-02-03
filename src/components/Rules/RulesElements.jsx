@@ -41,7 +41,7 @@ export const Subtitle = styled.p`
   shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-weight: 700;
 
-  color: ${({ darkText }) => (darkText ? "#ff437b" : "#fff")};
+  color: ${({ darkText }) => (darkText ? "#5E4CD6" : "#fff")};
 
   @media screen and (max-width: 1000px) {
     font-size: 36px;

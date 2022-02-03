@@ -35,8 +35,11 @@ const Aboutus = () => {
                   <Box w="full" mt={-340} mr={-50}>
                     <Rectangle lightBg={false} big={true}>
                       <Subtitle>
-                        We are a club at Coppell High School whose goal is to
-                        educate students about AI.
+                        NeuroHack is a organization started by a group of
+                        AI enthusiasts high school students. We aim to provide
+                        a platform for students to take their skills and
+                        knowledge to the next level in the field of Artificial
+                        Intelligence.
                       </Subtitle>
                     </Rectangle>
                   </Box>

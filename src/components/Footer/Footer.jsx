@@ -18,15 +18,15 @@ const Footer = () => {
       <FooterWrap>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/">Coppell AI</SocialLogo>
+            <SocialLogo to="/">NeuroHack</SocialLogo>
             <WebsiteRights>
-              Coppell AI © {new Date().getFullYear()} All Rights Reserved
+              NeuroHack Systems © {new Date().getFullYear()} All Rights Reserved
             </WebsiteRights>
             <SocialIcons>
               <SocialIconLink target="_blank" aria-label="Github">
                 <FaGithub />
               </SocialIconLink>
-              <SocialIconLink  target="_blank" aria-label="Instagram">
+              <SocialIconLink target="_blank" aria-label="Instagram">
                 <FaInstagram />
               </SocialIconLink>
               <SocialIconLink target="_blank" aria-label="Discord">

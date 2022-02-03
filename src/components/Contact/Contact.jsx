@@ -70,15 +70,15 @@ const Contact = () => {
   //   }
   // };
   return (
-    <ContactContainer id="contactus" lightBg={true}>
+    <ContactContainer id="contactus" lightBg={false}>
       <ContactFormWrapper>
         <ContactH1>Contact Us</ContactH1>
 
         <FormControl id="name" boxShadow="lg" isRequired>
           <FormLabel>Name</FormLabel>
           <Input
-            color="#ff437b"
-            background="white"
+            color="#5E4CD6"
+            background="#f7efdf"
             placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -89,10 +89,10 @@ const Contact = () => {
         <FormControl id="email" boxShadow="lg" isRequired>
           <FormLabel>Email address</FormLabel>
           <Input
-            color="#ff437b"
-            background="white"
+            color="#5E4CD6"
+            background="#f7efdf"
             type="email"
-            placeholder="support@coppellai.com"
+            placeholder="support@neurohack.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             isInvalid={emptyFields && !email}
@@ -102,8 +102,8 @@ const Contact = () => {
         <FormControl id="message" boxShadow="lg" isRequired>
           <FormLabel>Message</FormLabel>
           <Input
-            color="#ff437b"
-            background="white"
+            color="#5E4CD6"
+            background="#f7efdf"
             placeholder="Message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
@@ -115,12 +115,12 @@ const Contact = () => {
           <Button
             isLoading={submitting}
             bgColor="#f7efdf"
-            borderColor="#ff437b!important"
-            color="#ff437b"
+            borderColor="#5E4CD6!important"
+            color="#5E4CD6"
             type="submit"
             variant="solid"
             boxShadow="md"
-            _hover={{ boxShadow: "lg", bg: "#ff437b", color: "#f7efdf" }}
+            _hover={{ boxShadow: "lg", bg: "#5E4CD6", color: "#f7efdf" }}
             onClick={submitForm}
           >
             Submit

@@ -7,9 +7,9 @@ export const Rectangle = styled.div`
   margin: auto;
   width: ${({ big }) => (big ? "969px" : "569px")};
   height: 370px;
-  background: ${({ lightBg }) => (lightBg ? "#f7efdf" : "#ff437b")};
+  background: ${({ lightBg }) => (lightBg ? "#8EBCD9" : "#5E4CD6")};
   box-shadow: 0px 4px 30px
-    ${({ lightShadow }) => (lightShadow ? "#f7efdf" : "#ff437b")};
+    ${({ lightShadow }) => (lightShadow ? "#8EBCD9" : "#5E4CD6")};
   border-radius: 48px;
   @media screen and (max-width: 1350px) {
     width: 569px;

@@ -13,14 +13,14 @@ const FAQAccordion = ({ id, question, answer }) => {
     <AccordionItem borderRadius={5} lineHeight={6}>
       <h2>
         <AccordionButton
-          _expanded={{ bg: "#ff437b" }}
-          _hover={{ bg: "#ff437b" }}
+          _expanded={{ bg: "#5E4CD6" }}
+          _hover={{ bg: "#5E4CD6" }}
         >
           <Box
             className="box"
             flex="1"
             textAlign="left"
-            fontSize={24}
+            fontSize={22}
             fontWeight="bold"
             lineHeight={10}
           >

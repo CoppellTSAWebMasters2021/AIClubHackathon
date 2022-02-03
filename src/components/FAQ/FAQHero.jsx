@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import {
   FAQContainer,
   FAQContent,
@@ -23,10 +22,10 @@ const FAQHero = () => {
           <FAQAccordions>
             <Accordion
               allowToggle
-              bg="#ff437b"
+              bg="#5E4CD6"
               color="#f6efde"
               border="#f6efde"
-              borderRadius={48}
+              borderRadius={24}
               padding={5}
             >
               {questions.map((question) => {

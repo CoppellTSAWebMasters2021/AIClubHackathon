@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Button } from "../ButtonElement.jsx";
 import HeroImage from "../../images/hero-bg.jpg";
 import Down from "../../images/arrow.svg";
@@ -12,10 +12,12 @@ import {
   HeroBtnWrapper,
   HeroArrowDown,
   ArrowText,
+  HeroH2,
   // ArrowForward,
   // ArrowRight,
 } from "./HeroElements";
 import { HStack } from "@chakra-ui/react";
+//create a const that would calculate the time left to the event
 
 const Hero = () => {
   // const [hover, setHover] = useState(false)
@@ -24,17 +26,58 @@ const Hero = () => {
   //     setHover(!hover)
   // }
 
+  const calculateTimeLeft = () => {
+    let difference = +new Date(`5/06/2022`) - +new Date();
+
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        Days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        Hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        Minutes: Math.floor((difference / 1000 / 60) % 60),
+      };
+    }
+
+    return timeLeft;
+  };
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+    return () => clearTimeout(timer);
+  });
+
+  const timerComponents = [];
+
+  Object.keys(timeLeft).forEach((interval) => {
+    if (!timeLeft[interval]) {
+      return;
+    }
+
+    timerComponents.push(
+      <span>
+        {timeLeft[interval]} {interval}{" "}
+      </span>
+    );
+  });
+
   return (
     <HeroContainer id="home">
       <HeroBg>
         <HeroBgImage src={HeroImage} type="image/jpg" />
       </HeroBg>
       <HeroContent>
-        <HeroH1> Virtual Artifical Intelligence Hackathon 2022</HeroH1>
+        <HeroH1>NeuroHack Systems Hackathon 2022 </HeroH1>
+        <HeroH2>
+          {timerComponents.length ? timerComponents : <span>It's time to Hack</span>}
+        </HeroH2>
         <HStack>
           <HeroBtnWrapper>
             <Button
-              to="contactus"
+              to="/register"
               // onMouseEnter={onHover}
               // onMouseLeave={onHover}
               smooth={true}

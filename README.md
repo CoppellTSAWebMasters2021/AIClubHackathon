@@ -1,1 +1,1 @@
-# Coppell AI Club Hackathon TSA Website
+# NeuroHack Club Hackathon TSA Website

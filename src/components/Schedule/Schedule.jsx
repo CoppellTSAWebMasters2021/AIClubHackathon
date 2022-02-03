@@ -11,7 +11,7 @@ import {
 
 import { Flex, Box, VStack, HStack } from "@chakra-ui/react";
 import { Rectangle } from "../Rectangle";
-import { Button } from "../ButtonElement";
+import { ClearButton as Button } from "../ButtonElement";
 
 const Schedule = () => {
   const [isDay1, setDay1] = React.useState(true);
@@ -24,17 +24,17 @@ const Schedule = () => {
   };
 
   var buttonArea = <Button></Button>;
-  if (isDay1 === true){
+  if (isDay1 === true) {
     buttonArea = (
-       <Button primary="true" dark="true" big={true} onClick={setDay1False}>
-       Day 2
-     </Button>
+      <Button primary="true" dark="true" big={true} onClick={setDay1False}>
+        Day 2
+      </Button>
     );
-  }else{
+  } else {
     buttonArea = (
-       <Button primary="true" dark="true" big={true} onClick={setDay1True}>
-       Day 1
-     </Button>
+      <Button primary="true" dark="true" big={true} onClick={setDay1True}>
+        Day 1
+      </Button>
     );
   }
 
@@ -69,24 +69,23 @@ const Schedule = () => {
       <VStack spacing={10}>
         <Heading lightText={true}>Day 2</Heading>
         <HStack>
-        <HStack>
-          <VStack>
-            <Subtitle>11:00am:</Subtitle>
-            <Subtitle>3:00am:</Subtitle>
-            <Subtitle>11:59pm:</Subtitle>
-          </VStack>
-        </HStack>
+          <HStack>
+            <VStack>
+              <Subtitle>11:00am:</Subtitle>
+              <Subtitle>3:00am:</Subtitle>
+              <Subtitle>11:59pm:</Subtitle>
+            </VStack>
+          </HStack>
 
-        <HStack>
-          <VStack align="left">
-            <Subtitle>Workshop</Subtitle>
-            <Subtitle>Work Time</Subtitle>
-            <Subtitle>Due</Subtitle>
-          </VStack>
+          <HStack>
+            <VStack align="left">
+              <Subtitle>Workshop</Subtitle>
+              <Subtitle>Work Time</Subtitle>
+              <Subtitle>Due</Subtitle>
+            </VStack>
+          </HStack>
         </HStack>
-      </HStack>
       </VStack>
-
     );
   }
 
@@ -117,9 +116,7 @@ const Schedule = () => {
                 <VStack>
                   <Heading lightText={true}>Schedule</Heading>
                   <Flex p={10}>
-                    <VStack>
-                     {buttonArea}
-                    </VStack>
+                    <VStack>{buttonArea}</VStack>
                   </Flex>
                 </VStack>
               </Flex>

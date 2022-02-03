@@ -60,7 +60,7 @@ export const TextWrapper = styled.div`
 `;
 
 export const TopLine = styled.p`
-  color: #ff437b;
+  color: #5e4cd6;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -76,7 +76,7 @@ export const Heading = styled.h1`
     font-weight: 600;
 
     padding: 10px;
-    color ${({ lightText }) => (lightText ? "#ff437b" : "#010606")};
+    color ${({ lightText }) => (lightText ? "#5E4CD6" : "#010606")};
 
     @media screen and (max-width: 768px) {
         font-size: 45px;
@@ -97,7 +97,7 @@ export const Heading2 = styled.h1`
 
     padding: 10px;
     width: fit-content;
-    color ${({ lightText }) => (lightText ? "#ff437b" : "#010606")};
+    color ${({ lightText }) => (lightText ? "#5E4CD6" : "#010606")};
 
     @media screen and (max-width: 1000px) {
         font-size: 75px;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
-import {animateScroll as scroll} from 'react-scroll'
+import { animateScroll as scroll } from "react-scroll";
 import { Button } from "../ButtonElement";
 import {
   Nav,
@@ -40,7 +40,7 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
               {" "}
-              Coppell AI
+              NeuroHack
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -48,7 +48,7 @@ const Navbar = ({ toggle }) => {
             <NavMenu>
               <NavItem>
                 <NavLinks
-                  to="home"
+                  to="/"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -60,7 +60,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="aboutus"
+                  to="/aboutus"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -72,7 +72,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="schedule"
+                  to="/schedule"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -84,7 +84,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="faq"
+                  to="/faq"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -96,7 +96,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavItem>
                 <NavLinks
-                  to="contactus"
+                  to="/contactus"
                   smooth={true}
                   duration={500}
                   spy={true}
@@ -108,7 +108,7 @@ const Navbar = ({ toggle }) => {
               </NavItem>
               <NavBtn>
                 <Button
-                  to="contactus"
+                  to="/register"
                   // onMouseEnter={onHover}
                   // onMouseLeave={onHover}
                   smooth={true}
@@ -119,7 +119,6 @@ const Navbar = ({ toggle }) => {
                   primary="true"
                   dark="true"
                 >
-                  {" "}
                   Register
                 </Button>
               </NavBtn>
