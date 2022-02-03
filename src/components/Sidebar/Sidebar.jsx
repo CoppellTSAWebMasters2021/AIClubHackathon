@@ -19,7 +19,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SideMenu>
           <SidebarLink
-            to="home"
+            to="/home"
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             Home
           </SidebarLink>
           <SidebarLink
-            to="aboutus"
+            to="/aboutus"
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             About Us
           </SidebarLink>
           <SidebarLink
-            to="schedule"
+            to="/schedule"
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -52,7 +52,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             Schedule
           </SidebarLink>
           <SidebarLink
-            to="faq"
+            to="/faq"
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             FAQ
           </SidebarLink>
           <SidebarLink
-            to="contactus"
+            to="/contactus"
             onClick={toggle}
             smooth={true}
             duration={500}
@@ -76,7 +76,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SideMenu>
         <SideBtnWrap>
           <Button
-            to="contactus"
+            to="/contactus"
             onClick={toggle}
             smooth={true}
             duration={500}
