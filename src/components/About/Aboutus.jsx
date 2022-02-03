@@ -27,23 +27,16 @@ const Aboutus = () => {
                   <Rectangle lightBg={true} lightShadow={true} big={true} />
                 </Box>
 
-                <Flex
-                  direction="column"
-                  justifyContent="center"
-                  alignItems="center"
-                >
-                  <Box w="full" mt={-340} mr={-50}>
-                    <Rectangle lightBg={false} big={true}>
-                      <Subtitle>
-                        NeuroHack is a organization started by a group of
-                        AI enthusiasts high school students. We aim to provide
-                        a platform for students to take their skills and
-                        knowledge to the next level in the field of Artificial
-                        Intelligence.
-                      </Subtitle>
-                    </Rectangle>
-                  </Box>
-                </Flex>
+                <Box w="full" mt={-340} mr={-50}>
+                  <Rectangle lightBg={false} big={true}>
+                    <Subtitle>
+                      NeuroHack is a organization started by a group of AI
+                      enthusiasts high school students. We aim to provide a
+                      platform for students to take their skills and knowledge
+                      to the next level in the field of Artificial Intelligence.
+                    </Subtitle>
+                  </Rectangle>
+                </Box>
               </Flex>
             </Column1>
             <Column2>
