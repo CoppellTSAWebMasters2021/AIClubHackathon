@@ -19,7 +19,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       <SidebarWrapper>
         <SideMenu>
           <SidebarLink
-            to="/home"
+            to="/"
             onClick={toggle}
             smooth={true}
             duration={500}
