@@ -76,7 +76,7 @@ const Sidebar = ({ isOpen, toggle }) => {
         </SideMenu>
         <SideBtnWrap>
           <Button
-            to="/contactus"
+            to="/register"
             onClick={toggle}
             smooth={true}
             duration={500}
