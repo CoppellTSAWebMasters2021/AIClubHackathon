@@ -19,7 +19,7 @@ import {
   Select,
 } from "@chakra-ui/react";
 export const RegisterContainer = styled.div`
-  background: ${({ lightBg }) => (lightBg ? "#2a2a2a" : "#1a1a1a")};
+  background: ${({ lightBg }) => (lightBg ? "#222222" : "#1a1a1a")};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -120,7 +120,7 @@ const Register = () => {
     }
   };
   return (
-    <RegisterContainer>
+    <RegisterContainer lightBg={true}>
       <RegisterContent>
         <Flex justifyContent="center" alignItems="center">
           <Heading lightText={true}>Register</Heading>

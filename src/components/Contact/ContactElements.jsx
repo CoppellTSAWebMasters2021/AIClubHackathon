@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   height: 1100px;
-  background: ${({ lightBg }) => (lightBg ? "#2a2a2a" : "#1a1a1a")};
+  background: ${({ lightBg }) => (lightBg ? "#222222" : "#1a1a1a")};
   display: flex;
   flex-direction: column;
   align-items: center;

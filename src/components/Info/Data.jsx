@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: "NeuroHack",
   headline: "What is a hackathon?",
   description:
-    "An event where people collaborate on projects that make a difference in the world.",
+    "A hackahton is a fast paced event to help programmers gain experience while solving real world problems.",
   buttonLabel: "Contact Us",
   imgStart: false,
   img: require("../../images/svg-1.svg").default,
@@ -25,7 +25,7 @@ export const homeObjTwo = {
   topLine: "NeuroHack",
   headline: "Who can participate?",
   description:
-    "This hackathon is open to anyone anywhere in the world due to it switching to virtual!",
+    "This hackathon is open to anyone anywhere in the world due to it switching to virtual! You can work individually or in teams of up to 5 people.",
   buttonLabel: "Join Now",
   imgStart: true,
   img: require("../../images/svg-2.svg").default,

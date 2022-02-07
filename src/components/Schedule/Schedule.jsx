@@ -91,7 +91,7 @@ const Schedule = () => {
 
   return (
     <>
-      <ScheduleContainer id="schedule">
+      <ScheduleContainer id="schedule" lightBg={false}>
         <ScheduleWrapper>
           <ScheduleRow imgStart={false} imgStartM={true}>
             <Column1>

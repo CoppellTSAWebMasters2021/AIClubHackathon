@@ -13,7 +13,7 @@ import { Accordion, Flex } from "@chakra-ui/react";
 
 const FAQHero = () => {
   return (
-    <FAQContainer id="faq" lightBg={false}>
+    <FAQContainer id="faq" lightBg={true}>
       <FAQContent>
         <Flex justifyContent="center" alignItems="center">
           <Heading lightText={true}>FAQ</Heading>

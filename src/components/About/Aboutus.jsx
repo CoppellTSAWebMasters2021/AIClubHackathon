@@ -20,7 +20,7 @@ import { Button } from "../ButtonElement";
 const Aboutus = () => {
   return (
     <>
-      <AboutusContainer id="aboutus">
+      <AboutusContainer id="aboutus" lightBg={true}>
         <AboutusWrapper>
           <AboutusRow imgStart={true} imgStartM={true}>
             <Column1>
