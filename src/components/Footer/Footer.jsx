@@ -10,6 +10,7 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
+  RightWrapper,
 } from "./FooterElements";
 
 const Footer = () => {
@@ -19,9 +20,16 @@ const Footer = () => {
         <SocialMedia>
           <SocialMediaWrap>
             <SocialLogo to="/">NeuroHack</SocialLogo>
-            <WebsiteRights>
-              NeuroHack Systems © {new Date().getFullYear()} All Rights Reserved
-            </WebsiteRights>
+            <RightWrapper>
+              <WebsiteRights>
+                NeuroHack Systems © {new Date().getFullYear()} All Rights
+                Reserved
+              </WebsiteRights>
+              <WebsiteRights>
+                All images used are open sourced.
+              </WebsiteRights>
+            </RightWrapper>
+
             <SocialIcons>
               <SocialIconLink target="_blank" aria-label="Github">
                 <FaGithub />

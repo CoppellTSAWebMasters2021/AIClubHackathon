@@ -93,9 +93,19 @@ export const SocialLogo = styled(Link)`
   font-weight: bold;
 `;
 
+export const RightWrapper = styled.div`
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 16px;
+`;
+
 export const WebsiteRights = styled.small`
   color: #fff;
-  margin-bottom: 16px;
+  font-size: 0.8rem;
+  margin-top: 16px;
+  text-align: center;
 `;
 
 export const SocialIcons = styled.div`
