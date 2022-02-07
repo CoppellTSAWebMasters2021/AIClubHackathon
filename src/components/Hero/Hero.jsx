@@ -13,11 +13,8 @@ import {
   HeroArrowDown,
   ArrowText,
   HeroH2,
-  // ArrowForward,
-  // ArrowRight,
 } from "./HeroElements";
 import { HStack } from "@chakra-ui/react";
-//create a const that would calculate the time left to the event
 
 const Hero = () => {
   // const [hover, setHover] = useState(false)
@@ -58,7 +55,7 @@ const Hero = () => {
     }
 
     timerComponents.push(
-      <span>
+      <span key={interval}>
         {timeLeft[interval]} {interval}{" "}
       </span>
     );
@@ -71,8 +68,13 @@ const Hero = () => {
       </HeroBg>
       <HeroContent>
         <HeroH1>NeuroHack Systems Hackathon 2022 </HeroH1>
+        <HeroH2>Time Left To Register:</HeroH2>
         <HeroH2>
-          {timerComponents.length ? timerComponents : <span>It's time to Hack</span>}
+          {timerComponents.length ? (
+            timerComponents
+          ) : (
+            <span>It's time to Hack</span>
+          )}
         </HeroH2>
         <HStack>
           <HeroBtnWrapper>
@@ -80,9 +82,7 @@ const Hero = () => {
               to="/register"
               // onMouseEnter={onHover}
               // onMouseLeave={onHover}
-              smooth={true}
-              duration={500}
-              spy={true}
+
               exact="true"
               offset={-80}
               primary="true"

@@ -1,5 +1,17 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { MdKeyboardArrowDown, MdArrowForward } from "react-icons/md";
+import {
+  bounceInDown,
+  bounceInUp,
+  fadeInLeft,
+  fadeInRight,
+} from "react-animations";
+
+const bounceAnimation = keyframes`${bounceInDown}`;
+const bounceAnimationUp = keyframes`${bounceInUp}`;
+
+const fadeAnimation = keyframes`${fadeInLeft}`;
+const fadeAnimation2 = keyframes`${fadeInRight}`;
 
 export const HeroContainer = styled.div`
   background-color: black;
@@ -7,10 +19,13 @@ export const HeroContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 30px;
-  height: 800px;
+  height: 900px;
   position: relative;
   z-index: 1;
 
+  @media (max-width: 768px) {
+    height: 800px;
+  }
   :before {
     content: "";
     position: absolute;
@@ -64,6 +79,7 @@ export const HeroH1 = styled.h1`
   font-size: 48px;
   text-align: center;
   text-shadow: 4px 4px 25px #000000;
+  animation: ${fadeAnimation} 1s ease-in-out;
 
   @media screen and (max-width: 768px) {
     font-size: 40px;
@@ -79,6 +95,8 @@ export const HeroH2 = styled.h2`
   font-size: 24px;
   text-align: center;
   text-shadow: 4px 4px 25px #000000;
+  animation: ${fadeAnimation2} 1s ease-in-out;
+  text-decoration: ${({ underline }) => (underline ? "underline" : "none")};
 
   @media screen and (max-width: 768px) {
     font-size: 20px;
@@ -90,6 +108,7 @@ export const HeroBtnWrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding: 10px;
+  animation: ${bounceAnimation} 3s ease-in-out;
 `;
 
 export const ArrowForward = styled(MdArrowForward)`
@@ -108,7 +127,7 @@ export const HeroArrowDown = styled.img`
   align-items: center;
   position: absolute;
   bottom: 50px;
-
+  animation: 3s ${bounceAnimationUp};
   @media screen and (max-width: 768px) {
     bottom: 40px;
   }
@@ -124,6 +143,7 @@ export const ArrowText = styled.p`
   margin-bottom: 16px;
   position: absolute;
   bottom: 5px;
+  animation: 3s ${bounceAnimationUp};
 
   @media screen and (max-width: 768px) {
     font-size: 14px;

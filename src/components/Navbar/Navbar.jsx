@@ -47,62 +47,27 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks
-                  to="/"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
+                <NavLinks to="/" exact="true" offset={-80}>
                   Home
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="/aboutus"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
+                <NavLinks to="/aboutus" exact="true" offset={-80}>
                   About Us
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="/schedule"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
+                <NavLinks to="/schedule" exact="true" offset={-80}>
                   Schedule
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="/faq"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
+                <NavLinks to="/faq" exact="true" offset={-80}>
                   FAQ
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="/contactus"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
+                <NavLinks to="/contactus" exact="true" offset={-80}>
                   Contact Us
                 </NavLinks>
               </NavItem>
@@ -111,9 +76,7 @@ const Navbar = ({ toggle }) => {
                   to="/register"
                   // onMouseEnter={onHover}
                   // onMouseLeave={onHover}
-                  smooth={true}
-                  duration={500}
-                  spy={true}
+
                   exact="true"
                   offset={-80}
                   primary="true"

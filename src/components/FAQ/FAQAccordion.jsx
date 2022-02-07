@@ -23,6 +23,7 @@ const FAQAccordion = ({ id, question, answer }) => {
             fontSize={22}
             fontWeight="bold"
             lineHeight={10}
+            padding={3}
           >
             {question}
           </Box>

@@ -85,17 +85,31 @@ export const Heading = styled.h1`
 export const Subtitle = styled.p`
   font-size: 26px;
   max-width: 540px;
-  padding: 0 15px;
-
+  margin-bottom: 35px;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 
   @media screen and (max-width: 1000px) {
-    font-size: 18px;
+    font-size: 24px;
 
     width: fit-content;
   }
 
   @media screen and (max-width: 480px) {
-    font-size: 14px;
+    font-size: 22px;
   }
+`;
+
+export const ImgWrap = styled.div`
+  max-width: 555px;
+  height: 100%;
+`;
+
+export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+`;
+
+export const BtnWrap = styled.div`
+  display: flex;
+  justify-content: flex-start;
 `;

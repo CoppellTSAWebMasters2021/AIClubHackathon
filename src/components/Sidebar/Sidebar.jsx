@@ -18,56 +18,26 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SideMenu>
-          <SidebarLink
-            to="/"
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
+          <SidebarLink to="/" onClick={toggle} exact="true" offset={-80}>
             Home
           </SidebarLink>
-          <SidebarLink
-            to="/aboutus"
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
+          <SidebarLink to="/aboutus" onClick={toggle} exact="true" offset={-80}>
             About Us
           </SidebarLink>
           <SidebarLink
             to="/schedule"
             onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
             exact="true"
             offset={-80}
           >
             Schedule
           </SidebarLink>
-          <SidebarLink
-            to="/faq"
-            onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80}
-          >
+          <SidebarLink to="/faq" onClick={toggle} exact="true" offset={-80}>
             FAQ
           </SidebarLink>
           <SidebarLink
             to="/contactus"
             onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
             exact="true"
             offset={-80}
           >
@@ -78,9 +48,6 @@ const Sidebar = ({ isOpen, toggle }) => {
           <Button
             to="/register"
             onClick={toggle}
-            smooth={true}
-            duration={500}
-            spy={true}
             exact="true"
             offset={-80}
             primary="true"

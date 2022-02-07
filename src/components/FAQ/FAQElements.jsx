@@ -14,7 +14,7 @@ export const FAQContent = styled.div`
   padding: 0 24px;
   max-width: 1200px;
   width: 100%;
-  height: 860px;
+  height: 900px;
   max-width: 1500px;
   margin-right: auto;
   margin-left: auto;

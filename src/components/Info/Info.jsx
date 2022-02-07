@@ -31,6 +31,7 @@ const Info = ({
   primary,
   dark,
   dark2,
+  buttonReq,
 }) => {
   return (
     <>
@@ -42,19 +43,18 @@ const Info = ({
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                <BtnWrap>
+                <BtnWrap buttonReq={buttonReq}>
                   <Button
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
+                    to="/register"
+                    // onMouseEnter={onHover}
+                    // onMouseLeave={onHover}
+
                     exact="true"
                     offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
+                    primary="true"
+                    dark="true"
                   >
-                    {buttonLabel}
+                    Register
                   </Button>
                 </BtnWrap>
               </TextWrapper>
@@ -65,7 +65,6 @@ const Info = ({
               </ImgWrap>
             </Column2>
           </InfoRow>
-          
         </InfoWrapper>
       </InfoContainer>
     </>

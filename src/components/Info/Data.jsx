@@ -1,11 +1,12 @@
 export const homeObjOne = {
-  id: "aboutus",
+  id: "1",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "About Us",
-  headline: "We are a student-run club from Coppell High School",
-  description: "Here to help solve problems using AI",
+  topLine: "NeuroHack",
+  headline: "What is a hackathon?",
+  description:
+    "An event where people collaborate on projects that make a difference in the world.",
   buttonLabel: "Contact Us",
   imgStart: false,
   img: require("../../images/svg-1.svg").default,
@@ -13,16 +14,18 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: false,
+  buttonReq: false,
 };
 
 export const homeObjTwo = {
-  id: "schedule",
+  id: "2",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Schedule",
-  headline: "We are a student-run club from Coppell High School",
-  description: "Here to help solve problems using AI",
+  topLine: "NeuroHack",
+  headline: "Who can participate?",
+  description:
+    "This hackathon is open to anyone anywhere in the world as a result of it switching to virtual!",
   buttonLabel: "Join Now",
   imgStart: true,
   img: require("../../images/svg-2.svg").default,
@@ -30,15 +33,17 @@ export const homeObjTwo = {
   dark: false,
   primary: false,
   darkText: true,
+  buttonReq: false,
 };
 export const homeObjThree = {
-  id: "faq",
+  id: "3",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: "FAQ",
-  headline: "We are a student-run club from Coppell High School",
-  description: "Here to help solve problems using AI",
+  topLine: "NeuroHack",
+  headline: "Where/When is the hackathon?",
+  description:
+    "The hackathon was originally supposed to be held at Dallas Convention Center but due to COVID-19, we are now holding it virutally for everyone to participate via Zoom!",
   buttonLabel: "Contact Us",
   imgStart: false,
   img: require("../../images/svg-3.svg").default,
@@ -46,16 +51,18 @@ export const homeObjThree = {
   dark: true,
   primary: true,
   darkText: false,
+  buttonReq: false,
 };
 
 export const homeObjFour = {
-  id: "contactus",
+  id: "4",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
-  topLine: "Contact Us",
-  headline: "We are a student-run club from Coppell High School",
-  description: "Here to help solve problems using AI",
+  topLine: "NeuroHack",
+  headline: "How can I participate?",
+  description:
+    "You can participate by yourself or with a team of 2. To get started click the Register button down bellow.",
   buttonLabel: "Contact Us",
   imgStart: true,
   img: require("../../images/svg-4.svg").default,
@@ -63,4 +70,5 @@ export const homeObjFour = {
   dark: false,
   primary: false,
   darkText: true,
+  buttonReq: true,
 };
