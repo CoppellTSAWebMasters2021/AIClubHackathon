@@ -25,7 +25,7 @@ export const homeObjTwo = {
   topLine: "NeuroHack",
   headline: "Who can participate?",
   description:
-    "This hackathon is open to anyone anywhere in the world as a result of it switching to virtual!",
+    "This hackathon is open to anyone anywhere in the world due to it switching to virtual!",
   buttonLabel: "Join Now",
   imgStart: true,
   img: require("../../images/svg-2.svg").default,
@@ -43,7 +43,7 @@ export const homeObjThree = {
   topLine: "NeuroHack",
   headline: "Where/When is the hackathon?",
   description:
-    "The hackathon was originally supposed to be held at Dallas Convention Center but due to COVID-19, we are now holding it virutally for everyone to participate via Zoom!",
+    "The hackathon was initially supposed to be held at Dallas Convention Center, but due to COVID-19, we now have it virtually for everyone to participate via Zoom!",
   buttonLabel: "Contact Us",
   imgStart: false,
   img: require("../../images/svg-3.svg").default,
@@ -62,7 +62,7 @@ export const homeObjFour = {
   topLine: "NeuroHack",
   headline: "How can I participate?",
   description:
-    "You can participate by yourself or with a team of 2. To get started click the Register button down bellow.",
+    "You can participate by yourself or with a team of 2. To get started, click the Register button down below.",
   buttonLabel: "Contact Us",
   imgStart: true,
   img: require("../../images/svg-4.svg").default,

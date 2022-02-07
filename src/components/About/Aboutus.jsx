@@ -31,10 +31,10 @@ const Aboutus = () => {
               >
                 <VStack align="left">
                   <Subtitle>
-                    NeuroHack is an organization started by a group of AI
-                    enthusiasts high school students. We aim to provide a
-                    platform for students to take their skills and knowledge to
-                    the next level in the field of Artificial Intelligence.
+                    NeuroHack is an organization started by AI enthusiasts high
+                    school students. We aim to provide a platform for students
+                    to take their skills and knowledge to the next level in
+                    Artificial Intelligence.
                   </Subtitle>
                   <BtnWrap>
                     <Button
