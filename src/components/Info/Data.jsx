@@ -6,7 +6,7 @@ export const homeObjOne = {
   topLine: "NeuroHack",
   headline: "What is a hackathon?",
   description:
-    "A hackahton is a fast paced event to help programmers gain experience while solving real world problems.",
+    "A hackathon is a fast paced event to help programmers gain experience while solving real world problems.",
   buttonLabel: "Contact Us",
   imgStart: false,
   img: require("../../images/svg-1.svg").default,
@@ -25,7 +25,7 @@ export const homeObjTwo = {
   topLine: "NeuroHack",
   headline: "Who can participate?",
   description:
-    "This hackathon is open to anyone anywhere in the world due to it switching to virtual! You can work individually or in teams of up to 5 people.",
+    "This hackathon is open to anyone anywhere in the world due to it switching to virtual! You can work individually or with a partner.",
   buttonLabel: "Join Now",
   imgStart: true,
   img: require("../../images/svg-2.svg").default,
@@ -43,7 +43,7 @@ export const homeObjThree = {
   topLine: "NeuroHack",
   headline: "Where/When is the hackathon?",
   description:
-    "The hackathon was initially supposed to be held at Dallas Convention Center, but due to COVID-19, we now have it virtually for everyone to participate via Zoom!",
+    "The hackathon was initially supposed to be held at Dallas Convention Center, but due to COVID-19, we now have it virtually for everyone to participate via Zoom from May 6th to May 7th.",
   buttonLabel: "Contact Us",
   imgStart: false,
   img: require("../../images/svg-3.svg").default,
@@ -62,7 +62,7 @@ export const homeObjFour = {
   topLine: "NeuroHack",
   headline: "How can I participate?",
   description:
-    "You can participate by yourself or with a team of 2. To get started, click the Register button down below.",
+    "To get started, click the Register button down below to have the chance to win $500 in scholarship money. If you want more information about the hackathon, please click the FAQ button.",
   buttonLabel: "Contact Us",
   imgStart: true,
   img: require("../../images/svg-4.svg").default,

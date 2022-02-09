@@ -92,7 +92,7 @@ const Contact = () => {
             color="#5E4CD6"
             background="#f7efdf"
             type="email"
-            placeholder="support@neurohack.com"
+            placeholder="support@neurohacks.com"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             isInvalid={emptyFields && !email}
