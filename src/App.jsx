@@ -10,6 +10,8 @@ import FAQHero from "./components/FAQ/FAQHero";
 import Contact from "./components/Contact/Contact";
 import Register from "./components/Register/Register";
 import Aboutus from "./components/About/Aboutus";
+import ScrollToTop from "./pages/ScrollToTop";
+import Citations from "./components/Citations/Citations";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,17 +21,20 @@ function App() {
 
   return (
     <Router>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/faq" element={<FAQHero />} />
-        <Route path="/contactus" element={<Contact />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
-      <Footer />
+      <ScrollToTop>
+        <Sidebar isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutus" element={<Aboutus />} />
+          <Route path="/schedule" element={<Schedule />} />
+          <Route path="/faq" element={<FAQHero />} />
+          <Route path="/contactus" element={<Contact />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/citations" element={<Citations />} />
+        </Routes>
+        <Footer />
+      </ScrollToTop>
     </Router>
   );
 }

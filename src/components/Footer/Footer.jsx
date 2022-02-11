@@ -11,6 +11,7 @@ import {
   SocialIcons,
   SocialIconLink,
   RightWrapper,
+  Citations,
 } from "./FooterElements";
 
 const Footer = () => {
@@ -25,9 +26,7 @@ const Footer = () => {
                 NeuroHack Systems © {new Date().getFullYear()} All Rights
                 Reserved
               </WebsiteRights>
-              <WebsiteRights>
-                All images used are open sourced.
-              </WebsiteRights>
+              <Citations to="/citations">Citations</Citations>
             </RightWrapper>
 
             <SocialIcons>

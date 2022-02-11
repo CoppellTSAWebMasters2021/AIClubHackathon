@@ -108,6 +108,14 @@ export const WebsiteRights = styled.small`
   text-align: center;
 `;
 
+export const Citations = styled(Link)`
+  color: #fff;
+  text-decoration: underline;
+  font-size: 0.8rem;
+  margin-top: 16px;
+  text-align: center;
+`;
+
 export const SocialIcons = styled.div`
   display: flex;
   justify-content: space-between;
